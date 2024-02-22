@@ -1,0 +1,15 @@
+FROM python:3.9-alpine
+
+WORKDIR /usr/src/app
+
+COPY app.py /usr/src/app
+
+CMD ["python","app.py"]
+
+
+
+# docker login with username and pw
+# docker build name with <username>/<image_name>:version
+# docker build -t john/myimage:1.0 .
+
+# docker push <username>/<image_name>:version
